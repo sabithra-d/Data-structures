@@ -1,0 +1,39 @@
+num=int(input("Enter the size of list:"))
+list1=[int(input()) for x in range(num)]
+for i in range(len(list1)-1):
+    for j in range(len(list1)-1):
+        if(list1[j] > list1[j+1]):
+            list1[j],list1[j+1]=list1[j+1],list1[j]
+print(list1)
+
+
+"""
+ex:
+23 12 78 3 45 13
+
+12 23 78 3 45 13
+
+12 23 78 3 45 13
+
+12 23 3 78 45 13
+ 
+12 23 3 45 78 13
+
+12 23 3 45 13 78
+"""
+"""
+12 23 3 45 13 78
+
+12 23 3 45 13 78
+
+12 3 23 45 13 78
+
+12 3 23 13 45 78
+"""
+"""
+12 3 23 13 45 78
+3 12 23 13 45 78
+3 12 13 23 45 78
+"""
+
+
